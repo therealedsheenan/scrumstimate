@@ -1,16 +1,14 @@
-import { ScrumsimatePage } from './app.po';
+import { ScrumstimatePage } from './app.po';
 
-describe('scrumsimate App', () => {
-  let page: ScrumsimatePage;
+describe('scrumstimate App', function() {
+  let page: ScrumstimatePage;
 
   beforeEach(() => {
-    page = new ScrumsimatePage();
+    page = new ScrumstimatePage();
   });
 
-  it('should display welcome message', done => {
+  it('should display message saying app works', () => {
     page.navigateTo();
-    page.getParagraphText()
-      .then(msg => expect(msg).toEqual('Welcome to app!!'))
-      .then(done, done.fail);
+    expect(page.getParagraphText()).toEqual('app works!');
   });
 });
