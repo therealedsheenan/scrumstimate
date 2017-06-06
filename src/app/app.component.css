@@ -1,9 +1,45 @@
 
-.wrapper {
+.estimate-wrapper {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 100px);
+}
+
+.submit-wrapper {
+  width: 100%;
+  height: 100px;
+}
+
+.submit-btn {
+  background: #f06060;
+  width: 100%;
+  height: 100%;
+  font-size: 40px;
+  cursor: pointer;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 3px solid #fff;
+  color: #fff;
+}
+.submit-btn:hover {
+  color: #f06060;
+  background: #fff;
+}
+
+.submit-button:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 input[type="radio"]{
