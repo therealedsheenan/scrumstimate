@@ -5,17 +5,14 @@ import { CARDS } from '../data/cards';
 
 @Injectable()
 export class CardService {
+
   getCards(): Promise<Card[]> {
     return Promise.resolve(CARDS);
   }
 
-  // getHeroesSlowly(): Promise<Hero[]> {
-  //   return new Promise(resolve => {
-  //     setTimeout(() => resolve(this.getHeroes()), 2000);
-  //   });
-  // }
-  //
-  // getHero(id: number): Promise<Hero> {
-  //   return this.getHeroes().then(heroes => heroes.find(hero => hero.id === id));
-  // }
+  getSpecificCard(id): Promise<Card> {
+    return this.getCards()
+      .then(cards => cards.find(card => card.id === id));
+  }
+
 }
