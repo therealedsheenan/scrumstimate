@@ -1,1 +1,4 @@
-<div>this is the card-detail</div>
+<div *ngIf="card" class="detail-wrapper">
+  <button (click)="goBack()" class="btn"><</button>
+  <h1>{{card.display}}</h1>
+</div>
