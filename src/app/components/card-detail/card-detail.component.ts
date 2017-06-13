@@ -27,7 +27,7 @@ export class CardDetailComponent implements  OnInit {
       .subscribe(card => this.card = card);
   }
 
-  clickBack(): void {
+  goBack(): void {
     this.location.back();
   }
 }

@@ -9,6 +9,7 @@
     "test": "ng test",
     "pree2e": "webdriver-manager update --standalone false --gecko false",
     "e2e": "protractor",
+    "prod": "ng build --prod --env=prod",
     "fake-server": "json-server --watch fake-server/db.json"
   },
   "private": true,
