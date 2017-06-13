@@ -1,0 +1,16 @@
+{
+  "estimate": [
+    {
+      "id": 1,
+      "name": "estimate1"
+    }
+  ],
+  "cards": [
+    {
+      "id": 1,
+      "estimate_id": 1,
+      "score": 1,
+      "author": ""
+    }
+  ]
+}
