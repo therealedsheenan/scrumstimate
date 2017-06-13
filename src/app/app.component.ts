@@ -5,10 +5,6 @@ import { Component } from '@angular/core';
   template: `<router-outlet></router-outlet>`
 })
 export class AppComponent {
-  submitEstimate(e) {
-    console.log(e);
-  }
-
   onCardClick() {
     console.log('Card clicked.');
   }
