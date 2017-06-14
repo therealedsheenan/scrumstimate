@@ -10,7 +10,8 @@ import { CardService } from '../../services/card.service';
 @Component({
   selector: 'app-card-detail',
   templateUrl: './card-detail.component.html',
-  styleUrls: ['./card-detail.component.css']
+  styleUrls: ['./card-detail.component.css'],
+  providers: [CardService]
 })
 export class CardDetailComponent implements  OnInit {
   card: Card;

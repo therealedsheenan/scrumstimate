@@ -1,0 +1,11 @@
+<section class="estimate-wrapper" *ngIf="estimates.length > 0">
+  <h2>Sprint planning estimation:</h2>
+  <ul class="estimates-list">
+    <li *ngFor="let estimate of estimates">
+      {{estimate.name}}
+    </li>
+  </ul>
+
+  <!--<input class="new-estimate" placeholder="Create new estimate" autofocus="" [(ngModel)]="newEstimate.name"-->
+         <!--(keyup.enter)="addEstimate()">-->
+</section>

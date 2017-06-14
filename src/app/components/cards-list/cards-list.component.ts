@@ -7,7 +7,8 @@ import { CardService } from '../../services/card.service';
 @Component({
   selector: 'app-card-list',
   templateUrl: './cards-list.component.html',
-  styleUrls: ['./cards-list.component.css']
+  styleUrls: ['./cards-list.component.css'],
+  providers: [CardService]
 })
 export class CardsListComponent implements OnInit {
   cards: Card[];
