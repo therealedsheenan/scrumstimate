@@ -7,18 +7,17 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { CardsListComponent } from './components/cards-list/cards-list.component';
 import { CardDetailComponent } from './components/card-detail/card-detail.component';
+import { EstimateComponent } from './components/estimate/estimate.component';
 
 // routes
 import { AppRoutingModule } from './config/routes.module';
-
-// services
-import { CardService } from './services/card.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardsListComponent,
-    CardDetailComponent
+    CardDetailComponent,
+    EstimateComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +25,6 @@ import { CardService } from './services/card.service';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [CardService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
