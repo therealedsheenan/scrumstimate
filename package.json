@@ -26,7 +26,7 @@
     "http": "^0.0.0",
     "json-server": "^0.10.1",
     "rxjs": "^5.0.1",
-    "socket.io": "^2.0.2",
+    "socket.io": "^2.4.0",
     "ts-helpers": "^1.1.1",
     "zone.js": "^0.7.2"
   },
